@@ -1,0 +1,10 @@
+{
+  "python.defaultInterpreterPath": ".venv/bin/active",
+  "files.exclude": {
+    "**/__pycache__": true
+  },
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.autopep8"
+  },
+  "python.formatting.provider": "none"
+}

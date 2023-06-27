@@ -1,0 +1,4 @@
+.env
+.venv
+nohup.out
+log.txt
