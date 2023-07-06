@@ -11,7 +11,7 @@ load_dotenv()  # Load .env
 
 def check_api_status(api_url, api_name, discord_webhook_url):
     try:
-        res = requests.get(api_url)
+        res = requests.head(api_url)
         is_success = res.status_code in [200, 204]
         if is_success:
             message = f"🌟 {api_name} server is running."
