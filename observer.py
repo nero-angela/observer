@@ -59,7 +59,10 @@ if __name__ == '__main__':
             api_name=api_name,
             discord_webhook_url=discord_webhook_url
         )
-    send_discord_webhook(discord_webhook_url, '🚀 Observer is running')
+    send_discord_webhook(
+        discord_webhook_url,
+        '🚀 Observer is running\n- ' + '\n- '.join(api_names)
+    )
 
     while True:
         schedule.run_pending()
