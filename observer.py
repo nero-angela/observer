@@ -61,7 +61,9 @@ if __name__ == '__main__':
         )
     send_discord_webhook(
         discord_webhook_url,
-        '🚀 Observer is running\n- ' + '\n- '.join(api_names)
+        '🚀 Observer is running\n- ' + '\n- '.join(
+            [name + f'({url})' for name, url in zip(api_names, api_urls)]
+        )
     )
 
     while True:
